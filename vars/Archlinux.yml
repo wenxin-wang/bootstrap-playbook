@@ -1,0 +1,9 @@
+---
+dist_packages: []
+packages: >
+  {{base_packages + dist_packages}}
+
+system_bashrc: /etc/bash.bashrc
+
+system_console_conf: /etc/vconsole.conf
+keymaps_dir: /usr/share/kbd/keymaps

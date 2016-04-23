@@ -1,0 +1,7 @@
+---
+bash_profile: "{{user_home}}/.bash_profile"
+bashrc: "{{user_home}}/.bashrc"
+
+profile_d: "{{user_home}}/.profile.d"
+bash_profile_d: "{{user_home}}/.bash_profile.d"
+bashrc_d: "{{user_home}}/.bashrc.d"

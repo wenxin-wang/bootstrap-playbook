@@ -1,0 +1,12 @@
+---
+- name: check if package exists
+  command: dpkg-query -l '{{package}}'
+  failed_when: False
+  register: pkg_exists
+  when: ansible_os_family == 'Debian'
+
+- name: check if package exists
+  command: rpm -q '{{package}}'
+  failed_when: False
+  register: pkg_exists
+  when: ansible_os_family == 'RedHat'
