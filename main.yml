@@ -4,6 +4,7 @@
     - common
     - packages
     - console
+    - shell
 
 - hosts: all
   roles:

@@ -2,10 +2,11 @@
 - name: generate host file
   become: true
   template:
-    src: hosts
+    src: "{{instance_dir}}/net/hosts.jinja2"
     dest: /etc/hosts
   tags:
     - network
+    - hh
 
 - name: copy network manager connections
   become: true
