@@ -2,3 +2,4 @@
 ansible_python_interpreter: /usr/bin/python2
 
 env: "{{'desktop' if 'desktop' in group_names else 'server'}}"
+instance_dir: "{{playbook_dir}}/instance"

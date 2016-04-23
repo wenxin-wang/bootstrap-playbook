@@ -4,3 +4,7 @@
     - common
     - packages
     - console
+
+- hosts: all
+  roles:
+    - network

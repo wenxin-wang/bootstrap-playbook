@@ -1,0 +1,48 @@
+---
+- name: generate host file
+  become: true
+  template:
+    src: hosts
+    dest: /etc/hosts
+  tags:
+    - network
+
+- name: copy network manager connections
+  become: true
+  copy:
+    src: "{{instance_dir}}/nm-conns/"
+    dest: "/etc/NetworkManager/system-connections/"
+  tags:
+    - network
+
+- name: copy openvpn settings
+  copy:
+    src: "{{instance_dir}}/ovpn"
+    dest: "{{user_home}}/.ovpn"
+  tags:
+    - network
+
+- name: copy proxy settings
+  copy:
+    src: "{{instance_dir}}/proxy"
+    dest: "{{user_home}}/.config/"
+  tags:
+    - network
+
+- name: copy shadowsocks settings
+  become: true
+  copy:
+    src: "{{instance_dir}}/ss/"
+    dest: "{{ss_conf_d}}"
+  tags:
+    - network
+
+- name: enable and start shadowsocks
+  become: true
+  service: >
+    name=shadowsocks-libev@{{item}} enabled=true state=started
+  with_items:
+    - v4
+    - v6
+  tags:
+    - network
