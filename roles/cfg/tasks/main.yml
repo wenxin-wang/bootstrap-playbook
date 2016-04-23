@@ -1,0 +1,12 @@
+---
+- name: copy common user configs
+  copy: >
+    src=user/common/ dest={{user_home}}
+  tags:
+    - cfg
+
+- name: copy env user configs
+  copy: >
+    src=user/{{env}}/ dest={{user_home}}
+  tags:
+    - cfg

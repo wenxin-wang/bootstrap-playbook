@@ -1,0 +1,9 @@
+- name: install spacemacs
+  git:
+    repo: https://github.com/syl20bnr/spacemacs
+    dest: "{{user_home}}/.emacs.d"
+
+- name: install spacemacs config
+  git:
+    repo: https://github.com/stieizc/.spacemacs.d
+    dest: "{{user_home}}/.spacemacs.d"

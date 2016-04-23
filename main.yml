@@ -5,6 +5,7 @@
     - packages
     - console
     - shell
+    - cfg
 
 - hosts: all
   roles:

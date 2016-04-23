@@ -15,5 +15,12 @@ env_packages:
     - shadowsocks-libev
     - proxychains
 
+    - xorg-xmodmap
+    - xorg-xrandr
+    - arandr
+    - feh
+
+    - dex
+
 common_packages: >
   {{base_packages + env_packages[env]}}

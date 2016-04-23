@@ -5,3 +5,11 @@
   with_items: '{{packages}}'
   tags:
     - packages
+
+- include: common.yml
+  tags:
+    - packages
+
+- include: "{{env}}.yml"
+  tags:
+    - packages
