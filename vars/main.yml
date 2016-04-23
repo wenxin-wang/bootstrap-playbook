@@ -15,9 +15,13 @@ env_packages:
     - shadowsocks-libev
     - proxychains
 
+    - xorg-server
     - xorg-xmodmap
     - xorg-xrandr
     - arandr
+
+    - i3-wm
+    - i3status
     - feh
 
     - dex

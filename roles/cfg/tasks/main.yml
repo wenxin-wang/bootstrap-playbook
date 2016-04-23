@@ -10,3 +10,38 @@
     src=user/{{env}}/ dest={{user_home}}
   tags:
     - cfg
+
+- name: copy desktop user configs
+  copy: >
+    src={{instance_dir}}/cfg/user/ dest={{user_home}}
+  tags:
+    - cfg
+
+- name: copy common system files
+  become: true
+  copy: >
+    src=system/common/ dest=/
+  tags:
+    - cfg
+
+- name: copy env system files
+  become: true
+  copy: >
+    src=system/{{env}}/ dest=/
+  tags:
+    - cfg
+
+- name: copy desktop system files
+  become: true
+  copy: >
+    src={{instance_dir}}/cfg/system/ dest=/
+  tags:
+    - cfg
+
+- include: common.yml
+  tags:
+    - cfg
+
+- include: desktop.yml
+  tags:
+    - cfg

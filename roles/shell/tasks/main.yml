@@ -1,10 +1,4 @@
 ---
-- name: copy user shell settings
-  copy: >
-    src=../files/user/ dest={{user_home}}
-  tags:
-    - shell
-
 - name: fix rc file permisson
   file: >
     dest={{user_home}}/{{item}} mode="u+x" recurse=true
@@ -21,11 +15,5 @@
     line: >
       [[ -r /etc/bash.aliases ]] && . /etc/bash.aliases
     state: present
-  tags:
-    - shell
-
-- name: setup ssh shortcuts
-  copy: >
-    src={{instance_dir}}/net/ssh/ dest={{user_home}}/.ssh/
   tags:
     - shell

@@ -1,0 +1,5 @@
+- name: fix scripts permission
+  become: true
+  file:
+    dest: /usr/local/bin/load_xmodmaprc
+    mode: a+x

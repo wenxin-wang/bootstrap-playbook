@@ -18,7 +18,5 @@ do
 done
 
 rand_bg
-
-xmodmap .Xmodmap
-
+load_xmodmaprc
 dex -a
