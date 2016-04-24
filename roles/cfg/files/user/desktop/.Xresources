@@ -1,0 +1,55 @@
+!! Urxvt Settings
+
+! Fonts
+URxvt.font: xft:WenQuanYi Zen Hei Mono:size=11:antialias=true
+URxvt.letterSpace: -2
+
+!URxvt.font: xft:WenQuanYi Micro Hei:size=11:antialias=true
+!URxvt.letterSpace: -6
+
+! Scroll Bar
+URxvt.scrollBar:False
+!buffer
+URxvt.saveLines:400
+!URxvt.preeditType:Root
+
+! Perl extensions
+!URxvt.perl-ext-common:default,clipboard,matcher,keyboard-select
+URxvt.perl-ext-common:default,clipboard,matcher
+!URxvt.perl-ext-common:default,clipboard-osc,matcher
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-launcher: firefox
+URxvt.underlineURLs: False
+URxvt.matcher.button: 3
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+
+! ! Xft settings
+! Xft.lcdfilter: lcdlight
+! Xft.dpi: 124x125
+! !Xft.dpi: 96
+! ! Xft.antialias: false
+! Xft.rgba: rgb
+! Xft.hinting: true
+! Xft.hinstyle: hintslight
+! Xft.autohint: true
+
+!-- Xft settings -- !
+! Xft.antialias:  1
+! Xft.autohint:   0
+! Xft.dpi:        96
+! Xft.hinting:    1
+! Xft.hintstyle:  hintfull
+! Xft.lcdfilter:  lcddefault
+! Xft.rgba:       rgb
+
+! #include ".Xresources.d/base16-themes/base16-ashes.dark.xresources"
+! #include ".Xresources.d/base16-themes/base16-atelierheath.light.256.xresources"
+! #include ".Xresources.d/base16-themes/base16-atelierheath.light.xresources"
+! #include ".Xresources.d/base16-themes/base16-paraiso.light.256.xresources"
+! #include ".Xresources.d/base16-themes/base16-flat.light.256.xresources"
+! #include ".Xresources.d/base16-themes/base16-isotope.light.256.xresources"
+! #include ".Xresources.d/base16-themes/base16-londontube.light.256.xresources"
+! #include ".Xresources.d/base16-themes/base16-londontube.dark.256.xresources"
+#include ".Xresources.d/base16-themes/base16-monokai.dark.256.xresources"

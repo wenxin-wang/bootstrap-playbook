@@ -4,7 +4,6 @@ dist_env_packages:
   server: []
   desktop:
     - firefox
-    - firefox
 
 packages: >
   {{common_packages + dist_base_packages + dist_env_packages[env]}}

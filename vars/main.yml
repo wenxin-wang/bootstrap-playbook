@@ -20,9 +20,20 @@ env_packages:
     - xorg-xrandr
     - arandr
 
+    - lightdm
+    - lightdm-gtk-greeter
+    - light-locker
     - i3-wm
     - i3status
+    - rofi
+    - rxvt-unicode
+    - urxvt-perls
     - feh
+
+    - wqy-zenhei
+    - wqy-microhei
+
+    - fcitx-googlepinyin
 
     - dex
 

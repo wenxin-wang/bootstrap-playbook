@@ -1,7 +1,7 @@
 # -*- mode: Shell-script -*-
 urxvtd -q -o -f &&
 
-xrandr --setprovideroffloadsink radeon Intel
+#xrandr --setprovideroffloadsink radeon Intel
 
 #eval $(gnome-keyring-daemon -d --components=pkcs11,secrets,ssh,gpg)
 #export GNOME_KEYRING_CONTROL='false' # just a nonsense/invalid value
@@ -18,5 +18,5 @@ do
 done
 
 rand_bg
-load_xmodmaprc
+#load_xmodmaprc
 dex -a
