@@ -5,16 +5,16 @@
   tags:
     - X
 
-- name: lightdm settings
-  become: true
-  ini_file:
-    dest: "/etc/lightdm/lightdm.conf"
-    section: "Seat:*"
-    option: display-setup-script
-    value: /usr/local/bin/load_xmodmaprc
-    state: present
-  tags:
-    - X
+# - name: lightdm settings
+#   become: true
+#   ini_file:
+#     dest: "/etc/lightdm/lightdm.conf"
+#     section: "Seat:*"
+#     option: display-setup-script
+#     value: /usr/local/bin/load_xmodmaprc
+#     state: present
+#   tags:
+#     - X
 
 - name: install base16 themes
   git:

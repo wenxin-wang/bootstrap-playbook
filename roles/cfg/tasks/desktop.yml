@@ -1,5 +1,11 @@
 - name: fix scripts permission
   become: true
   file:
-    dest: /usr/local/bin/load_xmodmaprc
+    dest: /usr/local/bin/xkb-custom
     mode: a+x
+
+- name: fix local bin scripts permission
+  file:
+    dest: "{{user_home}}/.local/bin"
+    mode: u+x
+    recurse: true

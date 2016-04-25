@@ -16,3 +16,10 @@
     - v6
   tags:
     - network
+
+- name: enable and start NetworkManager
+  become: true
+  service: >
+    name=NetworkManager enabled=true state=started
+  tags:
+    - network

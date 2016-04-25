@@ -1,5 +1,5 @@
 # -*- mode: Shell-script -*-
-urxvtd -q -o -f &&
+urxvtd -q -o -f
 
 #xrandr --setprovideroffloadsink radeon Intel
 
@@ -18,5 +18,5 @@ do
 done
 
 rand_bg
-#load_xmodmaprc
+xkd-custom
 dex -a

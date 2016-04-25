@@ -36,6 +36,8 @@ env_packages:
     - fcitx-googlepinyin
 
     - dex
+    - dunst
+    - rofi
 
 common_packages: >
   {{base_packages + env_packages[env]}}
