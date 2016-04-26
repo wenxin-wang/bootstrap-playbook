@@ -33,6 +33,7 @@ env_packages:
     - gnome-keyring
     - emacs
     - udevil
+    - volumeicon
 
 common_packages: >
   {{base_packages + env_packages[env]}}
