@@ -1,3 +1,2 @@
 ---
-inputrc: >
-  {{'/etc/inputrc' if env == 'desktop' else user_home + '/.inputrc'}}
+inputrc: "{{'/etc/inputrc' if env == 'desktop' else user_home + '/.inputrc'}}"

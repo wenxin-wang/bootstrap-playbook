@@ -11,7 +11,7 @@
     dest: "/etc/lightdm/lightdm.conf"
     section: "Seat:*"
     option: display-setup-script
-    value: /usr/local/bin/load_xmodmaprc
+    value: /usr/local/bin/xkb-custom
     state: present
   tags:
     - X
@@ -20,5 +20,13 @@
   git:
     repo: https://github.com/chriskempson/base16-xresources.git
     dest: "{{user_home}}/.Xresources.d/base16-themes"
+    depth: 1
+  tags:
+    - X
+
+- name: enable user xsession
+  file:
+    dest: "{{user_home}}/.xsession"
+    mode: "u+x"
   tags:
     - X

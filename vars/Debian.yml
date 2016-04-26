@@ -1,1 +1,20 @@
 ---
+dist_base_packages:
+  - network-manager-gnome
+  - network-manager-openvpn
+
+dist_env_packages:
+  server: []
+  desktop:
+    - xserver-xorg-core
+    - x11-xserver-utils
+    - xsel
+
+packages: >
+  {{common_packages + dist_base_packages + dist_env_packages[env]}}
+
+system_bashrc: /etc/bash.bashrc
+
+system_console_conf: /etc/default/keyboard
+
+ss_conf_d: /etc/shadowsocks/

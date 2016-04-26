@@ -1,22 +1,4 @@
 ---
-- name: copy swapped keymap
-  become: true
-  copy: "src=swapped.kmap.gz dest={{keymaps_dir}}/"
-  tags:
-    - console
-
-- name: console settings
-  become: true
-  lineinfile:
-    dest: "{{system_console_conf}}"
-    line: "{{item.key}}={{item.value}}"
-    regexp: "^[\\s]*{{item.key}}[\\s]=.*$"
-    state: present
-  with_dict:
-    KEYMAP: swapped
-  tags:
-    - console
-
 - name: setup inputrc
   become: "{{env == 'desktop'}}"
   lineinfile:
@@ -25,8 +7,8 @@
     create: true
     state: present
   with_items:
-  - "\"\e[A\": history-search-backward"
-  - "\"\e[B\": history-search-forward"
+  - '"\e[A": history-search-backward'
+  - '"\e[B": history-search-forward'
   - set show-all-if-ambiguous on
   - set completion-ignore-case on
   tags:

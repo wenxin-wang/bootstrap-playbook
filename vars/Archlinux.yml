@@ -1,16 +1,30 @@
 ---
-dist_base_packages: []
+dist_base_packages:
+  - networkmanager
+  - network-manager-applet
 dist_env_packages:
   server: []
   desktop:
     - firefox
+    - shadowsocks-libev
+
+    - xorg-server
+    - xorg-xmodmap
+    - xorg-xrandr
+    - xorg-xrdb
+
+    - xf86-video-intel
+    - xf86-input-libinput
+    - xf86-input-synaptics
+
+    - wqy-zenhei
+    - wqy-microhei
+
+    - urxvt-perls
 
 packages: >
   {{common_packages + dist_base_packages + dist_env_packages[env]}}
 
 system_bashrc: /etc/bash.bashrc
-
-system_console_conf: /etc/vconsole.conf
-keymaps_dir: /usr/share/kbd/keymaps
 
 ss_conf_d: /etc/shadowsocks/

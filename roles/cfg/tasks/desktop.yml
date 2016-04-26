@@ -1,11 +1,19 @@
-- name: fix scripts permission
+- name: fix system local bin scripts permission
   become: true
   file:
-    dest: /usr/local/bin/xkb-custom
+    dest: /usr/local/bin
     mode: a+x
+    recurse: true
 
-- name: fix local bin scripts permission
+- name: fix user local bin scripts permission
   file:
     dest: "{{user_home}}/.local/bin"
     mode: u+x
+    recurse: true
+
+- name: fix network manager configs
+  become: true
+  file:
+    dest: /etc/NetworkManager/system-connections
+    mode: go-rwx
     recurse: true

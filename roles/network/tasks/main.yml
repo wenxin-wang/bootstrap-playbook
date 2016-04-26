@@ -7,6 +7,20 @@
   tags:
     - network
 
+#- name: copy shadowsocks deb
+#  become: true
+#  copy:
+#    src: "{{instance_dir}}/net/shadowsocks-libev.deb"
+#    dest: /tmp/
+#  tags:
+#    - network
+#
+#- name: install shadowsocks
+#  become: true
+#  apt: deb=/tmp/shadowsocks-libev.deb
+#  tags:
+#    - network
+
 - name: enable and start shadowsocks
   become: true
   service: >

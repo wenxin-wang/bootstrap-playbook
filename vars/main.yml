@@ -10,14 +10,8 @@ base_packages:
 env_packages:
   server: []
   desktop:
-    - networkmanager
-    - network-manager-applet
-    - shadowsocks-libev
     - proxychains
 
-    - xorg-server
-    - xorg-xmodmap
-    - xorg-xrandr
     - arandr
 
     - lightdm
@@ -26,14 +20,12 @@ env_packages:
     - i3-wm
     - i3status
     - rofi
-    - rxvt-unicode
-    - urxvt-perls
     - feh
 
-    - wqy-zenhei
-    - wqy-microhei
+    - rxvt-unicode
 
-    - fcitx-googlepinyin
+    - ibus
+    - ibus-googlepinyin
 
     - dex
     - dunst

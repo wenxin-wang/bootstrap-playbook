@@ -3,9 +3,9 @@
   roles:
     - common
     - packages
+    - cfg
     - console
     - shell
-    - cfg
 
 - hosts: all
   roles:
