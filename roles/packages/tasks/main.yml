@@ -20,6 +20,12 @@
   tags:
     - packages
 
+# - name: install aur packages
+#   command: >
+#     yaourt -S --noconfirm {{aur_packages | join(" ")}}
+#   tags:
+#     - packages
+
 - include: common.yml
   tags:
     - packages

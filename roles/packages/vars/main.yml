@@ -1,0 +1,6 @@
+---
+aur_packages:
+  - git-lfs
+  - ttf-meslo
+  - paper-gtk-theme-git
+  - paper-icon-theme-git
