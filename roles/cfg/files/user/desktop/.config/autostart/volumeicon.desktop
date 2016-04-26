@@ -1,0 +1,9 @@
+[Desktop Entry]
+Terminal=false
+Type=Application
+Name=volumeicon
+Exec=volumeicon
+Categories=System;Utility;
+X-GNOME-Autostart-Phase=Applications
+X-GNOME-AutoRestart=false
+X-GNOME-Autostart-Notify=false

@@ -34,6 +34,7 @@ env_packages:
     - emacs
     - udevil
     - volumeicon
+    - workrave
 
 common_packages: >
   {{base_packages + env_packages[env]}}
