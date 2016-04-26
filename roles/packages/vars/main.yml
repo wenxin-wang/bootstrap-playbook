@@ -4,3 +4,4 @@ aur_packages:
   - ttf-meslo
   - paper-gtk-theme-git
   - paper-icon-theme-git
+  - lightdm-webkit2-greeter

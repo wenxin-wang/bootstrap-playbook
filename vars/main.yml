@@ -35,6 +35,8 @@ env_packages:
     - udevil
     - volumeicon
     - workrave
+    - htop
+    - accountsservice
 
 common_packages: >
   {{base_packages + env_packages[env]}}
