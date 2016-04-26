@@ -31,6 +31,8 @@ env_packages:
     - dunst
     - rofi
     - gnome-keyring
+    - emacs
+    - udevil
 
 common_packages: >
   {{base_packages + env_packages[env]}}
