@@ -1,5 +1,5 @@
 #!/bin/bash
-DIR="/usr/local/share/X11/backgrounds"
+DIR="/usr/share/backgrounds"
 PIC=$(ls $DIR/* |shuf -n1)
 feh --bg-max "$PIC"
 #feh --bg-fill "$PIC"
