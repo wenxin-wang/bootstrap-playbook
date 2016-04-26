@@ -6,7 +6,7 @@ urxvtd -q -o -f
 #eval $(gnome-keyring-daemon -d --components=pkcs11,secrets,ssh,gpg)
 #export GNOME_KEYRING_CONTROL='false' # just a nonsense/invalid value
 #export SSH_AUTH_SOCK
-#export SSH_AUTH_SOCK=/run/user/$UID/keyring/ssh
+export SSH_AUTH_SOCK=/run/user/$UID/keyring/ssh
 #export GPG_AGENT_INFO
 
 for profile in /etc/profile ~/.bash_profile

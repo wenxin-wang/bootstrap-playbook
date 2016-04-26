@@ -11,9 +11,9 @@
     mode: u+x
     recurse: true
 
-- name: fix network manager configs
-  become: true
-  file:
-    dest: /etc/NetworkManager/system-connections
-    mode: go-rwx
-    recurse: true
+# - name: fix network manager configs
+#   become: true
+#   file:
+#     dest: /etc/NetworkManager/system-connections
+#     mode: go-rwx
+#     recurse: true

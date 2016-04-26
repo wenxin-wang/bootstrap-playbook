@@ -30,6 +30,7 @@ env_packages:
     - dex
     - dunst
     - rofi
+    - gnome-keyring
 
 common_packages: >
   {{base_packages + env_packages[env]}}
