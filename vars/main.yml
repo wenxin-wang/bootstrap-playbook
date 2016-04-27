@@ -38,6 +38,8 @@ env_packages:
     - htop
     - accountsservice
     - evince
+    - alsa-utils
+    - blueman
 
 common_packages: >
   {{base_packages + env_packages[env]}}
