@@ -3,6 +3,7 @@ dist_base_packages:
   - networkmanager
   - network-manager-applet
   - yaourt
+  - p7zip
 dist_env_packages:
   server: []
   desktop:

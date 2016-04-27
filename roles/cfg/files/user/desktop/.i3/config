@@ -18,7 +18,7 @@ set $mod Mod4
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose an xft font, such as:
 # font xft:WenQuanYi Zen Hei Mono
-font pango:WenQuanYi Zen Hei Mono, Meslo LG M 11
+font pango:WenQuanYi Zen Hei Mono, Meslo LG M 13
 # font xft:Droid Sans Mono 11
 
 ## Window border style
