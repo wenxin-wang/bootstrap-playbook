@@ -25,6 +25,7 @@
 #     yaourt -S --noconfirm {{aur_packages | join(" ")}}
 #   tags:
 #     - packages
+#     - aur
 
 - include: common.yml
   tags:

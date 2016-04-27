@@ -5,3 +5,5 @@ aur_packages:
   - paper-gtk-theme-git
   - paper-icon-theme-git
   - lightdm-webkit2-greeter
+  - globals
+  - wps-office

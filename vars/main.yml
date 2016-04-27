@@ -37,6 +37,7 @@ env_packages:
     - workrave
     - htop
     - accountsservice
+    - evince
 
 common_packages: >
   {{base_packages + env_packages[env]}}
