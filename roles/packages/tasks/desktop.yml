@@ -5,5 +5,5 @@
 
 - name: install spacemacs config
   git:
-    repo: https://github.com/stieizc/.spacemacs.d
+    repo: git@github.com:wenxin-wang/.spacemacs.d
     dest: "{{user_home}}/.spacemacs.d"
