@@ -5,5 +5,7 @@ aur_packages:
   - paper-gtk-theme-git
   - paper-icon-theme-git
   - lightdm-webkit2-greeter
-  - globals
+  - global
   - wps-office
+  - fcitx-sogoupinyin
+  - google-chrome

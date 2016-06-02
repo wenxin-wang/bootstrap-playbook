@@ -67,7 +67,8 @@ bindsym $mod+Return exec urxvtc
 bindsym $mod+Control+e exec evince
 
 # Start browser
-bindsym $mod+Control+f exec firefox
+#bindsym $mod+Control+f exec firefox
+bindsym $mod+Control+f exec google-chrome-stable
 
 # Start ftp
 bindsym $mod+Control+z exec filezilla
@@ -144,7 +145,7 @@ bindsym $mod+e layout toggle split
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+Control+space focus mode_toggle
 
 # focus the parent container
 bindsym $mod+a focus parent

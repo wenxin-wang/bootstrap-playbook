@@ -7,3 +7,4 @@
   git:
     repo: git@github.com:wenxin-wang/.spacemacs.d
     dest: "{{user_home}}/.spacemacs.d"
+    accept_hostkey: true

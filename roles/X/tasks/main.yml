@@ -10,9 +10,12 @@
   ini_file:
     dest: "/etc/lightdm/lightdm.conf"
     section: "Seat:*"
-    option: display-setup-script
-    value: /usr/local/bin/xkb-custom
+    option: "{{item.key}}"
+    value: "{{item.value}}"
     state: present
+  with_dict:
+    display-setup-script: /usr/local/bin/xkb-custom
+    greeter-session: lightdm-webkit2-greeter
   tags:
     - X
 

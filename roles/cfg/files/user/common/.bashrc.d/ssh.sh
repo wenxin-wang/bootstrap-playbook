@@ -5,20 +5,13 @@ sadd() {
     fi
 }
 
-scp() {
-    sadd ~/.ssh/stieizc_android
-    $(which scp) $@
-}
-
 ssh_login() {
-    sadd ~/.ssh/stieizc_android
     echo ssh -A -i ~/.ssh/stieizc_android $@
     ssh -A -i ~/.ssh/stieizc_android $@
     #ssh -A -i ~/.ssh/stieizc_android -R ~/.gnupg/S.gpg-agent:~/.gnupg/S.remote-agent -o "StreamLocalBindUnlink=yes" ${@/gpg/}
 }
 
 mosh_login() {
-    sadd ~/.ssh/stieizc_android
     ssh_cmd="ssh -A -i ~/.ssh/stieizc_android ${@:1:$#-1}"
     mosh --ssh="$ssh_cmd" ${!#}
 }

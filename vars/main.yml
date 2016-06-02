@@ -23,10 +23,9 @@ env_packages:
     - feh
 
     - rxvt-unicode
+    - polkit-gnome
 
-    - ibus
-    - ibus-pinyin
-
+    - fcitx-configtool
     - dex
     - dunst
     - rofi
