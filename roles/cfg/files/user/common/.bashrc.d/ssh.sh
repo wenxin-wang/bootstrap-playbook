@@ -6,13 +6,13 @@ sadd() {
 }
 
 ssh_login() {
-    echo ssh -A -i ~/.ssh/stieizc_android $@
-    ssh -A -i ~/.ssh/stieizc_android $@
-    #ssh -A -i ~/.ssh/stieizc_android -R ~/.gnupg/S.gpg-agent:~/.gnupg/S.remote-agent -o "StreamLocalBindUnlink=yes" ${@/gpg/}
+    echo ssh -A $@
+    ssh -A $@
+    #ssh -A -R ~/.gnupg/S.gpg-agent:~/.gnupg/S.remote-agent -o "StreamLocalBindUnlink=yes" ${@/gpg/}
 }
 
 mosh_login() {
-    ssh_cmd="ssh -A -i ~/.ssh/stieizc_android ${@:1:$#-1}"
+    ssh_cmd="ssh -A ${@:1:$#-1}"
     mosh --ssh="$ssh_cmd" ${!#}
 }
 
