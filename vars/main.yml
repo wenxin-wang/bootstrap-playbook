@@ -37,6 +37,7 @@ env_packages:
     - htop
     - accountsservice
     - evince
+    - poppler-data
     - alsa-utils
     - blueman
 
