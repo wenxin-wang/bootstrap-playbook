@@ -1,0 +1,10 @@
+---
+- name: fix rc file permisson
+  file: >
+    dest={{ ansible_env.HOME }}/{{item}} mode="u+x" recurse=true
+  with_items:
+    - .bashrc.d
+    - .profile.d
+  tags:
+    - cfg
+    - bash

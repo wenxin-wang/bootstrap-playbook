@@ -1,0 +1,16 @@
+---
+- name: copy common user configs
+  copy: >
+    src=user/ dest={{ ansible_env.HOME }}
+  tags:
+    - cfg
+
+- include: bash.yml
+  tags:
+    - cfg
+    - bash
+
+- include: console.yml
+  tags:
+    - cfg
+    - console
